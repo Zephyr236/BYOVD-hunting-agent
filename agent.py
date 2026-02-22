@@ -20,13 +20,13 @@ context7_encryption_key = os.getenv(
 )
 config = {
     "mcpServers": {
-        "MiniMax": {
-            "command": "uvx",
-            "args": ["minimax-coding-plan-mcp", "-y"],
-            "env": {
-                "MINIMAX_API_KEY": os.getenv("ANTHROPIC_API_KEY"),
-                "MINIMAX_API_HOST": "https://api.minimaxi.com",
-            },
+        # "MiniMax": {
+        #     "command": "uvx",
+        #     "args": ["minimax-coding-plan-mcp", "-y"],
+        #     "env": {
+        #         "MINIMAX_API_KEY": os.getenv("ANTHROPIC_API_KEY"),
+        #         "MINIMAX_API_HOST": "https://api.minimaxi.com",
+        #     },
         },
         # "context7": {
         #     "command": "cmd.exe",
@@ -711,3 +711,4 @@ def main(user_request):
 if __name__=="__main__":
 
     main(r"帮我分析一下Netfilter.sys是否存在BYOVD相关漏洞") 
+
