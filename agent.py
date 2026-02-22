@@ -32,7 +32,7 @@ config = {
         #     "command": "cmd.exe",
         #     "args": [
         #         "/C",
-        #         "npx -y @upstash/context7-mcp --api-key 'ctx7sk-2c39822c-8ad1-4d7e-8870-2bef7763b6a5' 2>NUL",
+        #         "npx -y @upstash/context7-mcp --api-key 'ctx' 2>NUL",
         #     ],
         #     "env": {"CLIENT_IP_ENCRYPTION_KEY": context7_encryption_key},
         # },
@@ -709,4 +709,5 @@ def main(user_request):
     # print(history)
 
 if __name__=="__main__":
+
     main(r"帮我分析一下Netfilter.sys是否存在BYOVD相关漏洞") 
